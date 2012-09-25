@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		53EEEF4B130766EF0027C199 /* ofMesh.h in Headers */ = {isa = PBXBuildFile; fileRef = 53EEEF49130766EF0027C199 /* ofMesh.h */; };
 		53EEEF4C130766EF0027C199 /* ofMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EEEF4A130766EF0027C199 /* ofMesh.cpp */; };
+		57923644160834D600ADC67E /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57923643160834D600ADC67E /* GLUT.framework */; };
 		92C55F88132DA7DD00EC2631 /* ofPath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92C55F86132DA7DD00EC2631 /* ofPath.cpp */; };
 		92C55F89132DA7DD00EC2631 /* ofPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 92C55F87132DA7DD00EC2631 /* ofPath.h */; };
 		DA48FE77131D85A6000062BC /* ofPolyline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA48FE73131D85A6000062BC /* ofPolyline.cpp */; };
@@ -136,12 +137,12 @@
 		EA1A4D0F14BB089D0090BC2B /* sweep.h in Headers */ = {isa = PBXBuildFile; fileRef = EA1A4D0114BB089D0090BC2B /* sweep.h */; };
 		EA1A4D1014BB089D0090BC2B /* tess.c in Sources */ = {isa = PBXBuildFile; fileRef = EA1A4D0214BB089D0090BC2B /* tess.c */; };
 		EA1A4D1114BB089D0090BC2B /* tess.h in Headers */ = {isa = PBXBuildFile; fileRef = EA1A4D0314BB089D0090BC2B /* tess.h */; };
-		EA1A4D1C14BB0ACA0090BC2B /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1A4D1B14BB0ACA0090BC2B /* GLUT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		53EEEF49130766EF0027C199 /* ofMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofMesh.h; sourceTree = "<group>"; };
 		53EEEF4A130766EF0027C199 /* ofMesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofMesh.cpp; sourceTree = "<group>"; };
+		57923643160834D600ADC67E /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = /Users/vertigo/Documents/xcodeworkspace/of64/apps/steady/emptyExample/../../../../../../../../System/Library/Frameworks/GLUT.framework; sourceTree = "<absolute>"; };
 		92C55F86132DA7DD00EC2631 /* ofPath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofPath.cpp; sourceTree = "<group>"; };
 		92C55F87132DA7DD00EC2631 /* ofPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofPath.h; sourceTree = "<group>"; };
 		DA48FE73131D85A6000062BC /* ofPolyline.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofPolyline.cpp; sourceTree = "<group>"; };
@@ -286,7 +287,6 @@
 		EA1A4D0114BB089D0090BC2B /* sweep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sweep.h; sourceTree = "<group>"; };
 		EA1A4D0214BB089D0090BC2B /* tess.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tess.c; sourceTree = "<group>"; };
 		EA1A4D0314BB089D0090BC2B /* tess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tess.h; sourceTree = "<group>"; };
-		EA1A4D1B14BB0ACA0090BC2B /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = SDKs/MacOSX10.6.sdk/System/Library/Frameworks/GLUT.framework; sourceTree = SYSTEM_DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,7 +294,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA1A4D1C14BB0ACA0090BC2B /* GLUT.framework in Frameworks */,
 				E4B27C2810CBEBAB00536013 /* AGL.framework in Frameworks */,
 				E4B27C2910CBEBAB00536013 /* ApplicationServices.framework in Frameworks */,
 				E4B27C2A10CBEBAB00536013 /* AudioToolbox.framework in Frameworks */,
@@ -304,6 +303,7 @@
 				E4B27C2E10CBEBAB00536013 /* CoreServices.framework in Frameworks */,
 				E4B27C3010CBEBAB00536013 /* OpenGL.framework in Frameworks */,
 				E4B27C3110CBEBAB00536013 /* QuickTime.framework in Frameworks */,
+				57923644160834D600ADC67E /* GLUT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,9 +430,9 @@
 		E4B69B4A0A3A1720003C02F2 = {
 			isa = PBXGroup;
 			children = (
-				EA1A4D1B14BB0ACA0090BC2B /* GLUT.framework */,
 				E432815E138ABFDD0047C5CB /* Shared.xcconfig */,
 				E4EB6916138AFC8500A09F29 /* CoreOF.xcconfig */,
+				57923643160834D600ADC67E /* GLUT.framework */,
 				E432815F138AC0470047C5CB /* Debug.xcconfig */,
 				EA1A4CF514BB089D0090BC2B /* libtess */,
 				E4328160138AC04A0047C5CB /* Release.xcconfig */,
@@ -781,7 +781,10 @@
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/../../lib/osx/";
 				COPY_PHASE_STRIP = NO;
 				EXECUTABLE_PREFIX = "";
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/System/Library/Frameworks,
+				);
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -795,6 +798,7 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_8)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_9)",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"$(LIB_POCOFOUNDATION)",
 					"$(LIB_POCONET)",
@@ -810,7 +814,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = openFrameworksDebug;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
+				SDKROOT = macosx10.7;
 				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
@@ -824,7 +828,10 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				EXECUTABLE_PREFIX = "";
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/System/Library/Frameworks,
+				);
 				GCC_FAST_MATH = YES;
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_SEARCH_PATHS = (
@@ -839,6 +846,7 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_8)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_9)",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"$(LIB_POCOFOUNDATION)",
 					"$(LIB_POCONET)",
@@ -854,7 +862,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = openFrameworks;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
+				SDKROOT = macosx10.7;
 				VALID_ARCHS = x86_64;
 			};
 			name = Release;
@@ -865,6 +873,9 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1)";
 				ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1 = x86_64;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx10.7;
 				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
@@ -875,6 +886,9 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1)";
 				ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1 = x86_64;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx10.7;
 				VALID_ARCHS = x86_64;
 			};
 			name = Release;
