@@ -18,13 +18,17 @@ LIB_POCOFOUNDATION = "$(OF_PATH)/libs/poco/lib/osx/PocoFoundation.a"
 LIB_POCONET = "$(OF_PATH)/libs/poco/lib/osx/PocoNet.a"
 LIB_POCOUTIL = "$(OF_PATH)/libs/poco/lib/osx/PocoUtil.a"
 LIB_POCOXML = "$(OF_PATH)/libs/poco/lib/osx/PocoXML.a"
+LIB_POCOCRYPTO = "$(OF_PATH)/libs/poco/lib/osx/libPocoCrypto.a"
+LIB_POCONETSSL = "$(OF_PATH)/libs/poco/lib/osx/libPocoNetSSL.a"
 LIB_RTAUDIO = "$(OF_PATH)/libs/rtAudio/lib/osx/rtAudio.a"
+LIB_OPENSSL1 = "$(OF_PATH)/libs/openssl/lib/osx/libcrypto.a"
+LIB_OPENSSL2 = "$(OF_PATH)/libs/openssl/lib/osx/libssl.a"
 //LIB_TESS = "$(OF_PATH)/libs/tess2/lib/osx/tess2.a"
 //LIB_CAIRO1 = "$(OF_PATH)/libs/cairo/lib/osx/cairo-script-interpreter.a"
 //LIB_CAIRO2 = "$(OF_PATH)/libs/cairo/lib/osx/cairo.a"
 //LIB_CAIRO3 = "$(OF_PATH)/libs/cairo/lib/osx/pixman-1.a"
 
-OF_CORE_LIBS = $(LIB_RTAUDIO) $(LIB_FREETYPE) $(LIB_POCOFOUNDATION) $(LIB_POCONET) $(LIB_POCOXML) $(LIB_POCOUTIL) $(LIB_GLEW) $(LIB_FREEIMAGE) 
+OF_CORE_LIBS = $(LIB_RTAUDIO) $(LIB_FREETYPE) $(LIB_POCOFOUNDATION) $(LIB_POCONET) $(LIB_POCOXML) $(LIB_POCOUTIL) $(LIB_GLEW) $(LIB_FREEIMAGE) $(LIB_POCONETSSL) $(LIB_POCOCRYPTO) $(LIB_OPENSSL1) $(LIB_OPENSSL2)
 //$(LIB_FMODEX) 
 //$(LIB_TESS)  $(LIB_CAIRO1) $(LIB_CAIRO2) $(LIB_CAIRO3)  
 OF_CORE_HEADERS = $(HEADER_OF) $(HEADER_POCO) $(HEADER_FREETYPE) $(HEADER_FREETYPE2) $(HEADER_FMODEX) $(HEADER_GLEW) $(HEADER_FREEIMAGE) $(HEADER_TESS2) $(HEADER_CAIRO) $(HEADER_RTAUDIO)

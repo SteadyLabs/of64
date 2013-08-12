@@ -1,5 +1,6 @@
 libs/openFrameworksCompiled/project/osx/build/*
 .DS_Store
+xcuserdata
 apps/examples/Creatures
 addons/tricks
 addons/msalibs
